@@ -1,5 +1,7 @@
 Feature: Web Order Page Food Order
 
+
+@smoke
   Scenario: Validation of Food order for Office
     Given the user is on Web Order homepage
     When the user selects "Office" options

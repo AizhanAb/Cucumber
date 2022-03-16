@@ -16,9 +16,10 @@ import org.junit.runner.RunWith;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 
-        features ="src/test/resources/features/com.webOrder/Order.feature",
-        glue = "stepdefinitions/weborderSteps/OrderSteps",
-        dryRun = false
+        features ="src/test/resources/features/com.webOrder",
+        glue = "src/test/java/stepdefinitions/weborderSteps",
+        dryRun = false,
+        tags ="@smokeLoginTest"
 
 )
 public class WebOrderRunner {

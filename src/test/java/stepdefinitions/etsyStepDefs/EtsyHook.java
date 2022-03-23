@@ -19,7 +19,7 @@ public class EtsyHook {
 
     @Before
     public void beforeScenario(){
-        driver.get(ConfigReader.readProperty(""));
+        driver.get(ConfigReader.readProperty("etsyUrl"));
         System.out.println("before scenario");
     }
 
